@@ -1,0 +1,36 @@
+#vcenter for dev connection details
+vcneter:
+  servername: 
+  username:
+  password: 
+  port:
+  
+#vcenter for dev connection details
+vra:
+  vrafqdn: 
+  username:
+  password: 
+  
+#netbackup connection details
+netbackup:
+  baseurl: baseurlTest
+  domainname: domainnameTest
+  domaintype: domaintypeTest
+  username: usernameTest
+  password: passwordTest
+  content_type: "application/vnd.netbackup+json; version=1.0"
+
+#vrops connection details
+vrops:
+  servername: 
+  username:
+  password: 
+  
+#windows domain connection details
+windows:
+  toolserver:
+  useradmin:
+  password:
+  dc:
+  zone:
+    
