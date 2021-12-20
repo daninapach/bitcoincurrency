@@ -1,12 +1,12 @@
-import uvicorn
 from fastapi import FastAPI
 import requests
 import json
 from datetime import datetime
 import os
+import uvicorn
 
 # load environment variables
-port = 8000
+port = os.environ["PORT"]
 
 # initialize FastAPI
 app = FastAPI()
@@ -41,7 +41,7 @@ async def bitcoin_rate(currency):
   
   
 if __name__ == "__main__":
-    uvicorn.run("main:app", host="0.0.0.0", port=port, reload=True)
+    uvicorn.run("main:app", host="0.0.0.0", port=int(port), reload=True)
 
 
     
